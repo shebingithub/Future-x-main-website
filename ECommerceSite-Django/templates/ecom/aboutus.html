@@ -1,0 +1,35 @@
+{% extends 'ecom/homebase.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<html lang="en" dir="ltr">
+
+<head>
+  {% comment %} <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title> {% endcomment %}
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {% comment %} {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%} {% endcomment %}
+  <br><br><br><br><br><br>
+<h3 style="text-align:center;">
+               ABOUT US :
+  We are Team Future-X ,"we makes ur steps connects to the Future" </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% comment %} {% include "ecom/footer.html" %} {% endcomment %}
+</body>
+
+{% endblock content %}
